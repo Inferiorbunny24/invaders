@@ -1,4 +1,4 @@
-package com.dregronprogram.Display;
+package com.dregronprogram.display;
 
 import java.awt.Canvas;
 import java.awt.Color;
