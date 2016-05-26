@@ -4,6 +4,8 @@ import java.awt.Canvas;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 
+import com.dregronprogram.game_screen.GameScreen;
+
 public class StateMachine {
 	
 	private ArrayList<SuperStateMachine> states = new ArrayList<SuperStateMachine>();
@@ -11,6 +13,10 @@ public class StateMachine {
 	private byte selectState = 0;
 	
 	public StateMachine(Canvas canvas){
+		
+		SuperStateMachine game = new GameScreen();
+		states.add(game);
+		
 		this.canvas = canvas;
 	}
 	
